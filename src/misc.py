@@ -3,7 +3,7 @@ from enum import Enum
 
 class SpeakerQuestion:
     affiliation = "Company/Organization/Educational Institution"
-    occupation: "Position, Job or Occupation"
+    occupation = "Position, Job or Occupation"
     homepage = "Social (Homepage)"
     twitter = "Social (X/twitter)"
     bluesky = "Social (Bluesky)"
