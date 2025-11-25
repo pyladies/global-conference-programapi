@@ -87,14 +87,14 @@ PRETALX_TOKEN=your_api_token_here
 Hosted at:
 
 ```
-https://conference.pyladies.com/api/2025
+http://programapi.conference.pyladies.com/
 ```
 
 | Endpoint                                                                                            | Description                   |
 |-----------------------------------------------------------------------------------------------------|-------------------------------|
-| [`/speakers.json`](https://conference.pyladies.com/api/2025/speakers.json)    | List of confirmed speakers    |
-| [`/sessions.json`](https://conference.pyladies.com/api/2025/sessions.json)    | List of confirmed sessions    |
-| [`/schedule.json`](https://conference.pyladies.com/api/2025/schedule.json)    | Latest conference schedule    |
+| [`/speakers.json`](https://programapi.conference.pyladies.com/speakers.json)    | List of confirmed speakers    |
+| [`/sessions.json`](https://programapi.conference.pyladies.com/sessions.json)    | List of confirmed sessions    |
+| [`/schedule.json`](https://programapi.conference.pyladies.com/schedule.json)    | Latest conference schedule    |
 
 ---
 
@@ -107,7 +107,7 @@ Check out the 👉 [`data/examples/README.md`](data/examples/README.md) for a fu
 
 ## 💬 Questions? Feedback?
 
-Feel free to open an issue or reach us at [info@pyladies.com](mailto:info@pyladies.com). We love contributors 💜
+Feel free to open an issue or reach us at [pyladiescon@pyladies.com](mailto:pyladiescon@pyladies.com). We love contributors 💜
 
 ---
 
