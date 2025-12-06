@@ -53,10 +53,21 @@ for resource in resources:
 
     pbar = tqdm(desc=f"Downloading {resource_name}", unit=" page", dynamic_ncols=True)
 
+    # Don't send auth token for youtube resource
+    # For some reason Pretalx API rejects it with a HTTP 403
+    request_headers = (
+        headers
+        if resource_name != "youtube"
+        else {
+            "Accept": "application/json, text/javascript",
+            "Pretalx-Version": Config.api_version,
+        }
+    )
+
     while url := data["next"]:
         n += 1
         pbar.update(1)
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=request_headers)
 
         if response.status_code != 200:
             raise Exception(f"Error {response.status_code}: {response.text}")
