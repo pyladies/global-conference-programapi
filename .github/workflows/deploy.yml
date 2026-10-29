@@ -1,11 +1,11 @@
 name: Deploy to static server
 
 on:
-  push:
-    branches:
-      - "plc2025"
-  schedule:
-    - cron: "0 0 * * *" # every day at midnight
+#  push:
+#    branches:
+#      - "plc2025"
+#  schedule:
+#    - cron: "0 0 * * *" # every day at midnight
   workflow_dispatch:
 
 permissions:
